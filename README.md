@@ -5,7 +5,7 @@
 </h1><br>
 
 # Outliersdetection: powerful Python outlier detection toolkit
-[![PyPI Latest Release](https://img.shields.io/pypi/v/pandas.svg)](https://pypi.org/project/pandas/
+[![PyPI Downloads](https://img.shields.io/pypi/dm/numpy.svg?label=PyPI%20downloads)](https://pypi.org/project/numpy/)
 
 ## Main Features
 
