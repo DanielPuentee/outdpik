@@ -59,6 +59,7 @@ class Outliersdetection:
         """ 
         
         This is one of the main function that requieres the 3 main arguments: df, col and method.
+        
         df: Could be a dataframe, list or an array.
         col: The column to detect outliers. It can be a list or a string in case it is only one column. "all" is also a valid option to select every numeric column of the dataset (default = 'all').
         method: The method to detect outliers. It can be "iqr", "zscore" or "all". "all" is the default option (default = 'all').
@@ -101,6 +102,7 @@ class Outliersdetection:
 
         This function is used to plot the outliers detected. It requieres the same arguments as the outliers function.
         However, it includes 2 extra arguments to custome the striplot
+
         df: Could be a dataframe, list or an array.
         col: The column to detect outliers. It just can be 1 numeric column in string or list format.
         method: The method to detect outliers. It can be "iqr", "zscore" or "all". "all" is the default option (default = 'all').
