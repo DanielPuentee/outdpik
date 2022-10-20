@@ -1,15 +1,15 @@
 
 from distutils.core import setup
 setup(
-  name = 'pyodv',        
-  packages = ['pyodv'],   
+  name = 'outdpik',        
+  packages = ['outdpik'],   
   version = '1.0',     
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'The fundamental toolkit for outliers search and visualization',   
-  author = 'DanielPuentee',                   # Type in your name
-  author_email = 'daniel.puenteviejo@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/DanielPuentee/pyodv',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/DanielPuentee/pyodv/archive/refs/tags/v_1.0.tar.gz',    # I explain this later on
+  author = 'Iker Cumplido',                   # Type in your name
+  author_email = 'ikumpli@gmail.com',      # Type in your E-Mail
+  url = 'https://github.com/DanielPuentee/outdpik',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/DanielPuentee/outdpik/archive/refs/tags/v_1.0.tar.gz',    # I explain this later on
   keywords = ['OUTLIERS', 'VISUALIZATION', 'PANDAS'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pandas',
