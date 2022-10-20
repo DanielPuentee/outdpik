@@ -148,11 +148,3 @@ class Outliersdetection:
 
             else: raise ValueError('Use only one numeric column')
         else: raise ValueError('The column may not exist or may not be numeric')
-        
-
-# if __name__ == "__main__":
-    
-#     df = pd.read_csv('spotify_cl.csv')
-#     od = Outliersdetection()
-#     print(od.outliers(np.array(df), 'all', method = 'iqr'))
-#     od.plot_outliers(np.array(df), ['5'], method = 'all')
