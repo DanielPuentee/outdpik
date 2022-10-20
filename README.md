@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-<img src="/branding/logo/primary/outliersremoverlogo.png" width="300">
+<img src="/branding/logo/primary/outdpik.png" width="300">
 </h1><br>
 
 ## Main Features
