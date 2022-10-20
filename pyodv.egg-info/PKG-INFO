@@ -4,8 +4,8 @@ Version: 1.0
 Summary: The fundamental toolkit for outliers search and visualization
 Home-page: https://github.com/DanielPuentee/pyodv
 Download-URL: https://github.com/DanielPuentee/pyodv/archive/refs/tags/v_1.0.tar.gz
-Author: Iker Cumplido / Daniel Puente
-Author-email: ikumpli@gmail.com / daniel.puenteviejo@gmail.com
+Author: DanielPuentee
+Author-email: daniel.puenteviejo@gmail.com
 License: MIT
 Keywords: OUTLIERS,VISUALIZATION,PANDAS
 Classifier: Development Status :: 3 - Alpha
