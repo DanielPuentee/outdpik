@@ -13,7 +13,7 @@ It incorporates the use of graphics for a better understanding of these.
 
 """
 
-class Outliersdetection:
+class pyodv:
     
     """ The class do not requiere any argument """
 

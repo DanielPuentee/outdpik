@@ -1,15 +1,15 @@
 
 from distutils.core import setup
 setup(
-  name = 'Outliersdetection',        
-  packages = ['Outliersdetection'],   
+  name = 'pyodv',        
+  packages = ['pyodv'],   
   version = '1.0',     
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'The fundamental toolkit for outliers search and visualization',   
   author = 'Iker Cumplido / Daniel Puente',                   # Type in your name
   author_email = 'ikumpli@gmail.com / daniel.puenteviejo@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/DanielPuentee/Outliersdetection',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/DanielPuentee/Outliersdetection/archive/refs/tags/v_1.0.tar.gz',    # I explain this later on
+  url = 'https://github.com/DanielPuentee/pyodv',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/DanielPuentee/pyodv/archive/refs/tags/v_1.0.tar.gz',    # I explain this later on
   keywords = ['OUTLIERS', 'VISUALIZATION', 'PANDAS'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pandas',
