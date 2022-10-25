@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: outdpik
+Version: 1.2
+Summary: The fundamental toolkit for outliers search and visualization
+Home-page: https://github.com/DanielPuentee/outdpik
+Download-URL: https://github.com/DanielPuentee/outdpik/archive/refs/tags/1.2.tar.gz
+Author: Iker Cumplido
+Author-email: ikumpli@gmail.com
+License: GPL
+Keywords: OUTLIERS,VISUALIZATION,PANDAS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GPL-3.0-only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: license.txt

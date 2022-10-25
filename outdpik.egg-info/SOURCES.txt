@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+outdpik/__init__.py
+outdpik/outdpik.py
+outdpik.egg-info/PKG-INFO
+outdpik.egg-info/SOURCES.txt
+outdpik.egg-info/dependency_links.txt
+outdpik.egg-info/requires.txt
+outdpik.egg-info/top_level.txt
