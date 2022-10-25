@@ -3,13 +3,13 @@ from distutils.core import setup
 setup(
   name = 'outdpik',        
   packages = ['outdpik'],   
-  version = '1.1',     
+  version = '1.2',     
   license= 'GNU',     
   description = 'The fundamental toolkit for outliers search and visualization',   
   author = 'Iker Cumplido',                  
   author_email = 'ikumpli@gmail.com',     
   url = 'https://github.com/DanielPuentee/outdpik',   
-  download_url = 'https://github.com/DanielPuentee/outdpik/archive/refs/tags/1.1.tar.gz',   
+  download_url = 'https://github.com/DanielPuentee/outdpik/archive/refs/tags/1.2.tar.gz',   
   keywords = ['OUTLIERS', 'VISUALIZATION', 'PANDAS'],  
   install_requires=[           
           'pandas',
