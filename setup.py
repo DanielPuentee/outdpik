@@ -11,7 +11,7 @@ setup(
   version = '1.3',     
   license= 'GNU',     
   description = 'The fundamental toolkit for outliers search and visualization',   
-  author = 'Iker Cumplido',                  
+  author = 'Iker Cumplido and Daniel Puente',                  
   author_email = 'ikumpli@gmail.com',     
   url = 'https://github.com/DanielPuentee/outdpik',   
   download_url = 'https://github.com/DanielPuentee/outdpik/archive/refs/tags/1.3.tar.gz',   

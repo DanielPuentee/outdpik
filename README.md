@@ -67,7 +67,7 @@ outdp.plot_outliers(df = df, col = "x")
 - [seaborn - Provides a high-level interface for drawing attractive statistical graphics](https://seaborn.pydata.org/)
 
 ## License
-This project is licensed under the terms of the [GNU](license.txt) - see the LICENSE file for details.
+This project is licensed under the terms of the [GNU](https://github.com/DanielPuentee/outdpik/blob/main/license.txt) - see the LICENSE file for details.
 
 ## Documentation
 The official documentation is hosted on: https://outdpik.readthedocs.io/en/latest/
