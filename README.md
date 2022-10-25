@@ -70,7 +70,7 @@ outdp.plot_outliers(df = df, col = "x")
 This project is licensed under the terms of the [GNU](license.txt) - see the LICENSE file for details.
 
 ## Documentation
-The official documentation is hosted on: https://pypi.org/project/outdpik/
+The official documentation is hosted on: https://outdpik.readthedocs.io/en/latest/
 
 ## Development
 Want to contribute? Great!
