@@ -7,7 +7,7 @@
 # outdpik: Fundamental toolkit for outlier analysis and visualization
 
 [![PyPI Latest Release](https://img.shields.io/pypi/v/outdpik.svg)](https://pypi.org/project/outdpik/)
-[![PyPI License](https://img.shields.io/pypi/l/jMetalPy.svg)](license.txt)
+[![PyPI License](https://img.shields.io/pypi/l/outdpik.svg)](license.txt)
 [![Package Status](https://img.shields.io/pypi/status/pandas.svg)](https://pypi.org/project/outdpik/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
@@ -36,7 +36,7 @@ Package Index (PyPI)](https://pypi.org/project/outdpik)
 pip install outdpik
 ```
 
-## How to use outdpik 🤙
+## How to use outdpik
 Examples of configuring and running outpdik:
 
 ```python
@@ -64,7 +64,7 @@ outdp.plot_outliers(df = df, col = "x")
 - [seaborn - Provides a high-level interface for drawing attractive statistical graphics](https://seaborn.pydata.org/)
 
 ## License
-This project is licensed under the terms of the [MIT](license.txt) - see the LICENSE file for details.
+This project is licensed under the terms of the [GNU](license.txt) - see the LICENSE file for details.
 
 ## Documentation
 The official documentation is hosted on FALTA: https://pandas.pydata.org/pandas-docs/stable
