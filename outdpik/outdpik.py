@@ -92,7 +92,7 @@ class outdpik:
 
             else: raise ValueError('Method must be iqr, zscore or all')
 
-        else: raise ValueError('Columns must be numeric')
+        else: raise ValueError('The column may not exist or may not be numeric. You must use just one column or use "all" argument to select all numeric columns')
 
     ########################################################################################################################################################################################################################
 
@@ -110,18 +110,23 @@ class outdpik:
         palette: A tuple with the colors to use in the plot. The first value is for the normal points and the second for the outliers (default = ((133/255, 202/255, 194/255), (38/255, 70/255, 83/255))).
 
         """
-
-        if type(df) != pd.core.frame.DataFrame:
+        
+        dff = df.copy()
+        if type(dff) != pd.core.frame.DataFrame:
             try: 
-                df = pd.DataFrame(df)
-                df.columns = [str(x) for x in df.columns]
-                for column in df.columns:
-                    try: df[column] = pd.to_numeric(df[column])
+                dff = pd.DataFrame(dff)
+                dff.columns = [str(x) for x in dff.columns]
+                for column in dff.columns:
+                    try: dff[column] = pd.to_numeric(dff[column])
                     except: pass
             except: raise ValueError('The data must be a DataFrame, list or an array')
         else: pass
+        if col not in dff.columns: raise ValueError('The column selected does not exist in the dataset or is not numeric')
+        if dff[col].isnull().sum() > 0:
+            dff.dropna(subset=[col], inplace=True)
+            dff.reset_index(drop=True, inplace=True)
 
-        numeric_columns = df.select_dtypes(include=np.number).columns
+        numeric_columns = dff.select_dtypes(include=np.number).columns
         if type(col) != list: col = [col]
         else: pass
 
@@ -129,22 +134,21 @@ class outdpik:
             if len(col) == 1:
 
                 if method == 'iqr':  
-                    outliers = {v: self.__outliers_iqr(df, v) for v in col}
-                    new_df = self.__dataframe_plot(df, col, outliers, size)
+                    outliers = {v: self.__outliers_iqr(dff, v) for v in col}
+                    new_df = self.__dataframe_plot(dff, col, outliers, size)
                     self.__stripplot(new_df, col, palette)
 
                 elif method == 'zscore': 
-                    outliers = {v: self.__outliers_zscore(df, v) for v in col}
-                    new_df = self.__dataframe_plot(df, col, outliers, size)
+                    outliers = {v: self.__outliers_zscore(dff, v) for v in col}
+                    new_df = self.__dataframe_plot(dff, col, outliers, size)
                     self.__stripplot(new_df, col, palette)            
                     
                 elif method == 'all':
-                    outliers_iqr, outliers_zscore =  [self.__outliers_iqr(df, v) for v in col], [self.__outliers_zscore(df, v) for v in col]
+                    outliers_iqr, outliers_zscore =  [self.__outliers_iqr(dff, v) for v in col], [self.__outliers_zscore(dff, v) for v in col]
                     outliers = {v: list(set(outliers_iqr[i] + outliers_zscore[i])) for i, v in enumerate(col)}
-                    new_df = self.__dataframe_plot(df, col, outliers, size)
+                    new_df = self.__dataframe_plot(dff, col, outliers, size)
                     self.__stripplot(new_df, col, palette)
 
                 else: raise ValueError('Method must be iqr, zscore or all')
-
             else: raise ValueError('Use only one numeric column')
-        else: raise ValueError('The column may not exist or may not be numeric')
+        else: raise ValueError('The column may not exist or may not be numeric. You must use just one column')
