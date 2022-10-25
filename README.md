@@ -9,6 +9,7 @@
 [![PyPI Latest Release](https://img.shields.io/pypi/v/outdpik.svg)](https://pypi.org/project/outdpik/)
 [![PyPI License](https://img.shields.io/pypi/l/outdpik.svg)](license.txt)
 [![Package Status](https://img.shields.io/pypi/status/pandas.svg)](https://pypi.org/project/outdpik/)
+[![Documentation Status](https://readthedocs.org/projects/outdpik/badge/?version=latest)](https://outdpik.readthedocs.io/en/latest/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## What is it?
@@ -69,7 +70,7 @@ outdp.plot_outliers(df = df, col = "x")
 This project is licensed under the terms of the [GNU](license.txt) - see the LICENSE file for details.
 
 ## Documentation
-The official documentation is hosted on FALTA: https://pandas.pydata.org/pandas-docs/stable
+The official documentation is hosted on: https://pypi.org/project/outdpik/
 
 ## Development
 Want to contribute? Great!
